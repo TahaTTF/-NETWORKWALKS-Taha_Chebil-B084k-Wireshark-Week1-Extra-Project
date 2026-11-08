@@ -7,7 +7,6 @@
 **Batch:** B084  
 **Project:** Week 1 Extra Project — Wireshark SOC / Packet Analysis  
 **Completed:** 8 November 2026  
-**Repository:** https://github.com/TahaTTF/-NETWORKWALKS-Taha_Chebil-B084k-Wireshark-Week1-Extra-Project
 
 ## Overview
 This repository documents my practical Wireshark learning after completing the mandatory Week 1 Kali Linux / VirtualBox lab setup. I investigated provided packet captures, answered investigation questions, and completed six SOC labs and two quizzes.
