@@ -27,19 +27,5 @@ Reconstruct a chat conversation and locate details transmitted within a TCP conn
 - Follow TCP Stream window: conversation text, direction colors, stream selector
 - Packet Details → TCP → Stream index; Statistics → Conversations → TCP
 
-## Difficult task / investigation challenge
-Finding the correct chat connection among many TCP streams and identifying who initiated the conversation.
-
-## Mistakes to avoid / troubleshooting notes
-- A TCP stream reconstructs application bytes across multiple packets.
-- Stream index is capture-specific; it is not a fixed port or universal conversation ID.
-- Cleartext passwords found in an exercise must not be copied into a public repository.
-
-**Actual errors encountered:** None specifically documented in my available notes. Add an exact error message and the fix here only if one occurred.
-
 ## Result and evidence
 - **Score:** 100/100 (all 10 tasks correct).
-- Add the matching score screenshot under `screenshots/` and link it here.
-
-## Personal revision note
-I should always verify **who sent the packet, who received it, which protocol/port was used, and what evidence supports the conclusion**.
