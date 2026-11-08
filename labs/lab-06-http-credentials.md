@@ -28,19 +28,5 @@ Inspect an unencrypted HTTP login request and understand why cleartext authentic
 - Packet Details → Hypertext Transfer Protocol → HTML Form URL Encoded (when decoded)
 - Right-click → Follow → HTTP Stream or TCP Stream
 
-## Difficult task / investigation challenge
-Finding the correct login request and locating form fields inside the packet details.
-
-## Mistakes to avoid / troubleshooting notes
-- HTTP does not encrypt application data; HTTPS uses TLS to protect it in transit.
-- A POST request is not automatically a login attempt; inspect URI and form fields.
-- Do not publish credentials, even those recovered in training traffic.
-
-**Actual errors encountered:** None specifically documented in my available notes. Add an exact error message and the fix here only if one occurred.
-
 ## Result and evidence
 - **Score:** 100/100 (all 10 tasks correct).
-- Add the matching score screenshot under `screenshots/` and link it here.
-
-## Personal revision note
-I should always verify **who sent the packet, who received it, which protocol/port was used, and what evidence supports the conclusion**.
