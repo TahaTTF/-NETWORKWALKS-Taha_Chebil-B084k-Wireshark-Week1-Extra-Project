@@ -28,18 +28,5 @@ Identify the source of suspicious SYN probes, the target, probed ports, and the 
 - Packet List: Source, Destination, Protocol, Info
 - Packet Details → Transmission Control Protocol → Flags, Source Port, Destination Port
 
-## Difficult task / investigation challenge
-Distinguishing the scanning host from the target and distinguishing open versus closed ports from response flags.
-
-## Mistakes to avoid / troubleshooting notes
-- A SYN alone is not proof of an attack; correlate repeated probes across ports and timing.
-- A TCP RST can be generated for several reasons; interpret it with the original probe.
-
-**Actual errors encountered:** None specifically documented in my available notes. Add an exact error message and the fix here only if one occurred.
-
 ## Result and evidence
 - **Score:** 100/100 (all 10 tasks correct).
-- Add the matching score screenshot under `screenshots/` and link it here.
-
-## Personal revision note
-I should always verify **who sent the packet, who received it, which protocol/port was used, and what evidence supports the conclusion**.
