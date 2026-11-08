@@ -30,19 +30,5 @@ Inspect web traffic and reconstructed streams to locate a code word, backup serv
 - Right-click packet → Follow → TCP Stream
 - File → Export Objects → HTTP (when an object is available)
 
-## Difficult task / investigation challenge
-Connecting an HTTP request to its response and locating the exact stream containing the clue.
-
-## Mistakes to avoid / troubleshooting notes
-- An HTTP 200 status indicates a successful HTTP response, not that content is safe.
-- Check request and response directions separately.
-- Exported objects from untrusted PCAPs should be treated as untrusted files; do not execute them.
-
-**Actual errors encountered:** None specifically documented in my available notes. Add an exact error message and the fix here only if one occurred.
-
 ## Result and evidence
 - **Score:** 100/100 (all 10 tasks correct).
-- Add the matching score screenshot under `screenshots/` and link it here.
-
-## Personal revision note
-I should always verify **who sent the packet, who received it, which protocol/port was used, and what evidence supports the conclusion**.
