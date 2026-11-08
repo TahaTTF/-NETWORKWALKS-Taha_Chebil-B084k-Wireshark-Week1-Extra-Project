@@ -29,19 +29,5 @@ Detect repeated failed logins followed by a successful login in a training captu
 - Packet Details → HTTP response status and application response body
 - Statistics → Conversations → IPv4/TCP; Follow TCP Stream
 
-## Difficult task / investigation challenge
-Counting attempts correctly and recognizing the actual success/failure indicators instead of assuming status codes always mean the same thing.
-
-## Mistakes to avoid / troubleshooting notes
-- HTTP 200 does not by itself prove authentication succeeded; inspect the response body, redirect, or application-specific indicators.
-- A failed login may also return 200, 302, 403, or a custom message.
-- Many attempts in a short time suggest brute force, but require context.
-
-**Actual errors encountered:** None specifically documented in my available notes. Add an exact error message and the fix here only if one occurred.
-
 ## Result and evidence
 - **Score:** 100/100 (all 10 tasks correct).
-- Add the matching score screenshot under `screenshots/` and link it here.
-
-## Personal revision note
-I should always verify **who sent the packet, who received it, which protocol/port was used, and what evidence supports the conclusion**.
