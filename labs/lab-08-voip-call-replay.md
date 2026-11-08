@@ -30,21 +30,10 @@ Investigate a VoIP call, distinguish call signaling from voice media, and identi
 - Packet Details → Session Initiation Protocol → From, To, Contact, Call-ID
 - Packet Details → Session Description Protocol (SDP) → media ports and codecs
 
-## Difficult task / investigation challenge
-Correlating SIP signaling with RTP audio and identifying the codec and caller information.
-
 ## Mistakes to avoid / troubleshooting notes
 - SIP sets up and manages calls; RTP carries the audio packets.
 - PCMU (G.711 μ-law) is an audio codec; it is not an encryption protocol.
 - SRTP encrypts/authenticates media; ordinary RTP does not provide that protection.
-- Call replay is possible only when the capture and supported codec allow reconstruction; encrypted media normally requires keys.
-- Do not publish payment-card numbers, expiration dates, or recovered voice recordings.
-
-**Actual errors encountered:** None specifically documented in my available notes. Add an exact error message and the fix here only if one occurred.
 
 ## Result and evidence
 - **Score:** 100/100 (all 10 tasks correct).
-- Add the matching score screenshot under `screenshots/` and link it here.
-
-## Personal revision note
-I should always verify **who sent the packet, who received it, which protocol/port was used, and what evidence supports the conclusion**.
